@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration</title>
+</head>
+
+<body>
+    <h1>Race Registration</h1>
+    <form action="/congrats">
+        <!-- Requires the input of the first and last name -->
+        <label for="firstName">Please enter your first name: </label>
+        <input type="text" name="firstname" id="firstName" placeholde="enter first name" required>
+        <label for="lastName">Please enter your last name: </label>
+        <input type="text" name="lastname" id="lastName" placeholde="enter last name" required>
+
+        <br>
+        <!-- Radio selection that requires the user to choose only one of the races before sumitting -->
+        <p>Select a race:</p>
+        <div>
+            <input type="radio" id="5k" name="chosenrace" required>
+            <label for="5k">5k</label>
+        </div>
+        <div>
+            <input type="radio" id="Marathon" name="chosenrace">
+            <label for="Marathon">Marathon</label>
+        </div>
+        <div>
+            <input type="radio" id="Iron Man" name="chosenrace">
+            <label for="Iron Man">Iron Man</label>
+        </div>
+
+
+        <!-- Dropdown menu requires user to select an age range -->
+        <p>
+            <label for="agerange">Choose an age range:</label>
+            <select name="range" id="range">
+                <option value="under17">0-16</option>
+                <option value="under26">17-25</option>
+                <option value="under40">25-39</option>
+                <option value="40plus">40+</option>
+            </select>
+        </p>
+
+        <!-- Requires an email and password to fully register -->
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" minlenght="4" maxlength="16" required>
+
+        <br>
+        <br>
+        <button>Submit Registration</button>
+
+    </form>
+</body>
+
+</html>
